@@ -1,0 +1,11 @@
+dt {
+    background-color: lightblue;
+}
+
+ul {
+    list-style-type: circle;
+}
+
+ol {
+    list-style-position: inside;
+}

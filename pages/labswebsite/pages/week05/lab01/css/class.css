@@ -1,0 +1,31 @@
+.gray {
+    background-color: gray;
+    font-weight: bold;
+}
+
+.red {
+    background-color: red;
+    font-style: italic;
+}
+
+.purple {
+    background-color: purple;
+    color: white;
+}
+
+.important {
+    font-size: 250%;
+}
+
+#fuchsia {
+    background-color: fuchsia;
+}
+
+#uppercase {
+    text-transform: uppercase; 
+}
+
+#bigwords {
+    font-size: 50px;
+    color: green;
+}

@@ -1,0 +1,28 @@
+body {
+background-color: #E0FFFF;
+color: navy;
+font-family: Garamond;
+}
+
+h3 {
+background-color: blue;
+color: white;
+font-size: 18px;
+font-style: italic;
+text-decoration: underline;
+}
+
+p {
+font-family: Helvetica;
+font-size: 14px;
+color: #000080;
+}
+
+address {
+font-size: 10px;
+}
+
+blockquote {
+text-align: center;
+text-transform: uppercase;
+}
