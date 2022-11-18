@@ -1,0 +1,102 @@
+@charset "utf-8";
+html, body {margin: 0; height: 100%; overflow: hidden}
+
+h1 {
+	color: #FFFFFF;
+	text-align: center;
+	padding-top: 350px;
+	font-style: italic;
+	font-size: 275%;
+	font-family: Trebuchet MS;
+}
+
+h2,h3 {
+	font-family: Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", "monospace";
+	color: white;
+	text-align: center;
+	padding-top: 1px;
+	font-style: italic;
+	font-size: 150%;
+}
+
+p {
+	font-family: Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", "monospace";
+	text-align: center;
+	color: white;
+	font-size: 15px;
+}
+
+hr {
+	height: 5px;
+	background-color: white;
+	width: 1000px;
+}
+
+blockquote {
+	color: white;
+	text-align: center;
+}
+
+body {
+  margin: 0;
+  padding-left: 50px;
+}
+
+footer {
+	padding-top: 10px;
+}
+.mybutton1 {
+	background-color:transparent;
+	border-radius:22px;
+	border:3px solid #ffffff;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Trebuchet MS;
+	font-size:30px;
+	font-weight:bold;
+	font-style:italic;
+	padding:14px 76px;
+	text-decoration:none;
+	text-shadow:0px 0px 0px #575757;
+}
+.mybutton1:hover {
+	background-color: transparent;
+	border: 5px solid #ffffff;
+	font-size: 40px;
+}
+.mybutton1:active {
+	position:relative;
+	top:1px;
+}
+
+.box{
+	margin: auto;
+	width: 900px;
+	height: 1200px;
+	padding: 10px;
+	border: thin solid #FFFFFF;
+	border-radius: 15px;
+	background: url("../images/background.jpg");
+	background-repeat: repeat;
+}
+
+.linkbox {
+	text-align:center;
+	padding-top: 10px;
+}
+
+.image {
+  min-height: 100vh;
+  background-repeat: repeat;
+  background-attachment: fixed;
+  background-size: 19%;
+  padding: 30px;
+}
+
+.gif {
+	width: 50px;
+	height: auto;
+	margin-left: auto;
+	margin-right: auto;
+}
