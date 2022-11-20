@@ -1,0 +1,192 @@
+* 
+h1 {
+	font-family: Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", "monospace";
+	color: white;
+	text-align: center;
+	padding-top: 1px;
+	font-style: italic;
+	font-size: 175%;
+}
+
+h2,h3 {
+	font-family: Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", "monospace";
+	color: white;
+	text-align: center;
+	padding-top: 1px;
+	font-style: italic;
+	font-size: 150%;
+}
+
+nav {
+	padding-bottom: 5px;
+	width: 800px;
+	height: 50px;
+	margin: auto;
+	background-image: url("../images/darkspace.gif")
+}
+
+p {
+	font-family: Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", "monospace";
+	text-align: center;
+	color: white;
+	font-size: 15px;
+}
+
+hr {
+	height: 3px;
+	background-color: white;
+	width: 800px;
+}
+
+blockquote {
+	color: white;
+	text-align: center;
+}
+
+body {
+  margin: 0;
+  padding-left: 50px;
+}
+
+/*The one descendent selector*/
+
+div a {
+	font-family: Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", "monospace";
+	font-style: italic;
+	display: inline-block;
+	margin-right: 15px;
+	font-size: 25px;
+	color: white;
+}
+
+a:visited {
+	color: white;
+}
+a:hover {
+	color: crimson;
+}
+a:active {
+	color: white;
+	background-color: grey;
+}
+
+ul li {
+	list-style:square;
+	list-style-position: inside;
+	font:Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", "monospace";
+	color: white;
+}
+
+figure {
+	background-size: auto;
+}
+
+figcaption {
+	font-family: Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", "monospace";
+	text-align: center;
+	color: white;
+	font-size: 15px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	
+}
+
+
+.image {
+  background-image: url("../images/darkspace.gif");
+  min-height: 100vh;
+  background-repeat: repeat;
+  background-attachment: fixed;
+  padding: 30px;
+}
+
+.box{
+	margin: auto;
+	width: 900px;
+	height: 1380px;
+	padding: 10px;
+	border: thin solid #FFFFFF;
+	border-radius: 15px;
+	background: url("../images/background.jpg");
+	background-repeat: repeat;
+	}
+
+.box2 {
+	margin: auto;
+	width: 879px;
+	height: 3580px;
+	padding: 10px;
+	background-color: black;
+}
+
+.linkbox {
+	text-align:center;
+}
+
+.img {
+	display: block;
+	max-width: 70%;
+	height: auto;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 10px;
+	
+	
+}
+
+.img1 {
+	display: block;
+	max-width: 50%;
+	height: auto;
+	margin-left: auto;
+	margin-right: auto;
+	border: medium solid white;
+	border-radius: 15px;
+}
+
+.img2 {
+	display: block;
+	max-width: 100%;
+	height: auto;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 10px;
+	padding-left: 22px;
+}
+
+.figure1 {
+	background-image: url("../images/black_mamba.png");
+	border: medium solid white;
+	border-radius: 10px;
+}
+
+.figcaption1 {
+	font-family: Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", "monospace";
+	text-align: center;
+	color: white;
+	font-size: 15px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	
+}
+
+
+/*The one id*/
+#grucifix {
+	display: block;
+	max-width: 8%;
+	height: auto;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 10px;
+	
+}
+
+#face {
+	display: block;
+	max-width: 50%;
+	margin-left: auto;
+	margin-right: auto;
+	border: medium solid #FFFFFF;
+	
+}

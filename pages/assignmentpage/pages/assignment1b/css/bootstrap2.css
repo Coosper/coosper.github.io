@@ -1,0 +1,118 @@
+@charset "utf-8";
+body {
+	 background-image: url("../images/royal.jpg");
+	 background-size: 60%;
+     background-repeat: repeat;
+     background-attachment: fixed;
+}
+
+h1 {
+	font-family: Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", "monospace";
+	text-align: center;
+	font-style: oblique;
+	color: #f3d6b6;
+	font-size: 25px;
+	
+}
+
+hr {
+	height: 4px;
+	background-color: #f3d6b6;
+	color: #f3d6b6;
+	width: 800px;
+}
+
+p {
+	font-family: Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", "monospace";
+	text-align: center;
+	color: #f3d6b6;
+	font-size: 15px;
+	padding-left: 50px;
+	padding-right: 50px;
+}
+
+div a {
+	font-family: Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", "monospace";
+	font-style: italic;
+	display: inline-block;
+	margin-right: 15px;
+	font-size: 25px;
+	color: #f3d6b6;
+}
+
+a:visited {
+	color: #f3d6b6;
+}
+a:hover {
+	color: #012325;
+	background-color: #f3d6b6;
+}
+a:active {
+	color: #f3d6b6;
+	background-color: #012325;
+}
+
+table {
+	border-collapse: collapse;
+	padding: 10px;
+	padding-bottom: 20px;
+}
+
+table, th, td {
+	border: thin solid #f3d6b6;
+	background-color: #012325;
+	color: white;
+	padding-left: 25px;
+	padding-right: 25px;
+	text-align: center;
+}
+
+tbody td:nth-of-type(1) {
+	background: #f3d6b6;
+	border: thin solid black;
+	color: black;
+}
+
+tfoot td:nth-of-type(1) {
+	background: #f3d6b6;
+	border: thin solid black;
+	color: black;
+}
+
+thead td {
+	background: #f3d6b6;
+	border: thin solid black;
+	color: black;
+	}
+
+
+
+.image {
+  min-height: 100vh;
+  background-size: 60%;
+  background-repeat: repeat;
+  background-attachment: fixed;
+  padding: 30px;
+}
+
+.img {
+	display: block;
+	max-width: 70%;
+	height: auto;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.box{
+	margin: auto;
+	width: 900px;
+	height: 3600px;
+	padding: 10px;
+	border: medium solid #f3d6b6;
+	border-radius: 15px;
+	background-color: #012325;
+	}
+
+.linkbox {
+	text-align:center;
+}
