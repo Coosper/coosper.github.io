@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.css">
+    <title>Semantic UI Dropdown Exercise</title>
+    <style>
+      .ui.container {
+        margin-top:2em;
+      } 
+    </style>
+</head>
+<body>
+
+<div class = "ui grid container">
+<div class="ui selection dropdown">
+            <input type="hidden" name="county">
+            <i class="filter icon"></i>
+            <span class="default text">Select a County</span>
+
+            <div class="menu">
+                <div class="header">
+                    <i class="tags icon"></i>
+                    Filter by County
+                </div>
+                <div class="divider"></div>
+
+                <a class="item" href="https://visitkilkenny.ie/" target="_blank">Visit Kilkenny</a>
+
+                <a class="item" href="https://tipperary.com/" target="_blank">Visit Tipperary</a>
+
+                <a class="item" href="https://visitwaterford.com/" target="_blank">Visit Waterford</a>
+
+
+            </div>
+        </div>
+</div>
+    
+    <script>
+    $('.ui.dropdown').dropdown();
+    </script>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" 
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" 
+		crossorigin="anonymous">
+    
+</script>
+<script  src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.js"></script>
+
+</body>
+</html>
+
