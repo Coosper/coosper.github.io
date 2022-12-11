@@ -1,0 +1,163 @@
+@charset "utf-8";
+html, body {
+    overflow: auto;
+}
+
+body {
+	background-image: url("../images/background3.jpg") !important; 
+	background-size: cover !important;  
+	background-repeat: no-repeat;
+	background-attachment: fixed !important;
+}
+
+main {
+	
+	text-align: center;
+}
+
+p {
+	text-align: center;
+	font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", "serif";
+	color: #c7d167;
+}
+
+.ui.link.cards.content {
+	background: black;
+}
+
+
+
+.ui.large.top.menu {
+	background-color: #4e282d;
+	height: 6em;
+	color: #c7d167;
+	border-bottom: medium solid #c7d167;
+}
+
+.ui.large.container {
+	background-color: #4e282d;
+	border-top: medium solid #c7d167;
+	height: 8em;
+	padding-top: 2em;
+
+	bottom: 0;
+    width: 100%;
+}
+
+.ui.raised.very.padded.text.container.segment {
+	background-color: #4e282d;
+	border: medium solid #c7d167;
+	border-radius: .6em;	
+}
+
+.ui.raised.very.padded.text.container.segment p {
+	color: #c7d167;
+}
+
+.ui.horizontal.divider {
+	color: #c7d167;
+	font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", "serif";
+	font-size: 1.25em;
+	padding-top: 0.3em;
+	padding-bottom: 0.3em;
+	margin-left: 1.9em;
+	margin-right: 1.9em;
+}
+
+.ui.vertical.segment {
+	margin-left: 1.9em;
+	margin-right: 1.9em;
+}
+
+.ui.medium.image {
+	padding-top: 2em;
+}
+
+.item {
+	color: #c7d167 !important;
+	font-size: 1.4em;
+	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+	font-style: italic;
+	font-weight: bold;
+}
+
+.item.wine {
+	color: #c7d167 !important;
+	font-size: 1.2em;
+	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+	font-weight: 100;
+	font-style: normal;
+}
+
+.ui.text.container {
+	background-color: #4e282d;
+	color: #c7d167;
+	border: medium solid #c7d167;
+	border-radius: 5px;
+	padding-top: 2em;
+}
+
+.ui.form label {
+	color: #c7d167;
+}
+
+.wine {
+	color: #c7d167;
+}
+
+.ui.form {
+	margin-left: 10em;
+	margin-right: 10em;
+}
+
+.ui.grid.container {
+	background-color: #4e282d;
+	border: medium solid #c7d167;
+	border-radius: 8px;
+	margin-top: 2em;
+	margin-bottom: 2em;
+	padding-bottom: 5em;
+	color: #c7d167;
+}
+
+.ui.basic.table {
+	margin-left: 2em;
+	margin-right: 2em;
+	border: thin solid #c7d167;
+	color: #c7d167;
+}
+
+
+
+caption {
+font-size: 24px;
+margin-bottom: 0.5em;
+font-weight: bold;
+font-style: italic;
+text-align: center;
+}
+
+
+.ui.header {
+	color: #c7d167;
+	padding-top: 0.4em;
+}
+
+.ui.message {
+	background-color:#4e282d;
+	border-top: medium solid #c7d167;
+	border-bottom: medium solid #c7d167;
+}
+
+.ui.bulleted.list {
+	text-align: justify;
+}
+
+
+.youtube {
+	border: medium solid #c7d167;
+	
+}
+.attention {
+	
+}
