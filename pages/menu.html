@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>La Vida Loca</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="/js/script.js"></script>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="icon" href="/images/logo.ico" type="image/x-icon" />
+</head>
+
+<body class="font-brandon bg-menu-background">
+    <!-- Navbar -->
+    <nav class="bg-black shadow border-b-4 border-custom-red">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between h-16">
+                <!-- Logo -->
+                <div class="flex-shrink-0 flex items-center">
+                    <a href="#" class="flex items-center space-x-2">
+                        <img src="/images/lavidaloca_logo.png" alt="Logo" class="h-12 w-auto" />
+                        <p class="text-gray-50 text-3xl font-custom">La Vida Loca</p>
+                    </a>
+                </div>
+
+                <!-- Menu items (visible on larger screens) -->
+                <div class="hidden md:flex md:items-center md:space-x-6">
+                    <a href="/index.html"
+                        class="block text-gray-50 font-brandon hover:text-custom-yellow px-3 py-2">Home</a>
+                    <a href="/pages/menu.html"
+                        class="block text-gray-50 font-brandon hover:text-custom-red px-3 py-2">Menu</a>
+                    <a href="/pages/about.html" class="block text-gray-50 font-brandon hover:text-custom-green px-3 py-2">About</a>
+                    <a href="/pages/contact.html" class="block text-gray-50 font-brandon hover:text-custom-purple px-3 py-2">Contact</a>
+                </div>
+
+                <!-- Hamburger button (visible on mobile) -->
+                <div class="md:hidden flex items-center">
+                    <button id="menu-btn" class="text-gray-700 hover:text-gray-900 focus:outline-none">
+                        <svg class="h-7 w-7" fill="none" stroke="white" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile menu (hidden by default) -->
+        <div id="mobile-menu" class="md:hidden hidden">
+            <div class="px-2 pt-2 pb-3 space-y-1 bg-black border-t">
+                <a href="/index.html"
+                    class="block text-gray-50 font-brandon hover:text-custom-yellow px-3 py-2">Home</a>
+                <a href="/pages/menu.html" class="block text-gray-50 font-brandon hover:text-custom-red px-3 py-2">Menu</a>
+                <a href="/pages/about.html" class="block text-gray-50 font-brandon hover:text-custom-green px-3 py-2">About</a>
+                <a href="/pages/contact.html" class="block text-gray-50 font-brandon hover:text-custom-purple px-3 py-2">Contact</a>
+            </div>
+        </div>
+        </div>
+    </nav>
+
+    <!-- Menu Content -->
+    <main class="max-w-7xl mx-auto px-4 py-8 bg-menu-background">
+        <!-- Header -->
+        <header class="text-center mt-5 mb-12">
+            <h1 class="text-4xl text-6xl text-black-400 font-custom mb-5 rotate-[358deg]">All Our Dishes and Sauces Are
+                Homemade!</h1>
+        </header>
+
+        <!-- Menu Sections -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Step 1: Choose Your Meat -->
+            <section class="relative bg-step1-background border-dotted border-step1-border border-4 shadow p-6 mt-5">
+                <div
+                    class="absolute -top-10 left-1/2 -translate-x-1/2 bg-step1-border text-menu-background font-custom px-4 py-2 uppercase shadow-xl w-[350px] flex items-center justify-center text-4xl rotate-[358deg]">
+                    Step 1: Choose Your Meat
+                </div>
+                <ul class="space-y-6 mt-3">
+                    <li class="flex items-start">
+                        <span class="text-step1-border mr-2">•</span>
+                        <div>
+                            <h3 class="text-lg font-semibold text-step1-border">Al pastor</h3>
+                            <p class="text-gray-700">Also known as ‘Tacos Al Pastor’ is our spit-grilled pork shoulder
+                                marinated using a lightly spiced Adobe marinade. This recipe originates from the Central
+                                Mexican region of Puebla and Mexico City. <span class="text-sm text-step1-border">(Not
+                                    spicy)</span></p>
+                        </div>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-step1-border mr-2">•</span>
+                        <div>
+                            <h3 class="text-lg font-semibold text-step1-border">Biria</h3>
+                            <p class="text-gray-700">This is a slow cooked beef stew flavoured using Adobe which
+                                consists of charred tomatillo, onion, Papillas chillies, dried chillies, garlic, herbs,
+                                and spices. This delicious beef dish is cooked in a consommé to enhance its textures and
+                                flavours. <span class="text-sm text-step1-border">(Light spicy) (9)</span></p>
+                        </div>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-step1-border mr-2">•</span>
+                        <div>
+                            <h3 class="text-lg font-semibold text-step1-border">Fried Chicken thighs</h3>
+                            <p class="text-gray-700">Fried grilled chicken which has been marinated in a lemon, pepper
+                                and herb marinade. <span class="text-sm text-step1-border">(Not spicy)</span></p>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+
+            <!-- Step 2: Choose Your Dish -->
+            <section class="relative bg-step2-background border-dotted border-step2-border border-4 shadow p-6 mt-5">
+                <div
+                    class="absolute -top-10 left-1/2 -translate-x-1/2 bg-step2-border text-menu-background font-custom px-4 py-2 uppercase shadow-xl w-[350px] flex items-center justify-center text-4xl rotate-[358deg]">
+                    Step 2: Choose Your Dish
+                </div>
+                <div class="mb-8 mt-7">
+                    <h3 class="text-xl font-semibold text-step2-border mb-4">Traditional Mexican<img
+                            src="/images/GF.ico" class="inline-block h-5 w-5"></h3>
+                    <ul class="space-y-6">
+                        <li class="flex items-start">
+                            <span class="text-step2-border mr-2">•</span>
+                            <div class="flex justify-between w-full">
+                                <div>
+                                    <p class="text-step2-border">Soft Tacos <img src="/images/GF.ico"
+                                            class="inline-block h-5 w-5"></p>
+                                    <p class="text-gray-700">Traditional 8” double hand sized soft corn tortillas filled
+                                        with your favourite meat. Served with salsa roja, salsa verde and salad.</p>
+                                </div>
+                                <p class="text-step2-border">€12.50</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-step2-border mr-2">•</span>
+                            <div class="flex justify-between w-full">
+                                <div>
+                                    <p class="text-step2-border">Birria Tostada <img src="/images/GF.ico"
+                                            class="inline-block h-5 w-5"></p>
+                                    <p class="text-gray-700">2 medium corn-based tortillas filled with beef, cheese,
+                                        onion, and coriander. Served alongside our birria consommé, salsa roja, salsa
+                                        verde, and fresh side salad. <span class="text-sm text-step2-border">(7,
+                                            9)</span></p>
+                                </div>
+                                <p class="text-step2-border">€12.50</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-step2-border mr-2">•</span>
+                            <div class="flex justify-between w-full">
+                                <div>
+                                    <p class="text-step2-border">Quesadilla <img src="/images/GF.ico"
+                                            class="inline-block h-5 w-5"></p>
+                                    <p class="text-gray-700">Large 12” corn-based tortilla filled with cheese, tomato,
+                                        coriander, and meat of your choice. Grilled on birria drippings for extra
+                                        crunch. Served with salsa roja, salsa verde and salad. <span
+                                            class="text-sm text-step2-border">(7)</span></p>
+                                </div>
+                                <p class="text-step2-border">€12.50</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold text-step2-border mb-4">Loaded Tex-Mex Dishes <img
+                            src="/images/GF.ico" class="inline-block h-5 w-5"></h3>
+                    <ul class="space-y-6">
+                        <li class="flex items-start">
+                            <span class="text-step2-border mr-2">•</span>
+                            <div class="flex justify-between w-full">
+                                <div>
+                                    <p class="text-step2-border">Burrito</p>
+                                    <p class="text-gray-700">Lightly grilled wheat flour tortilla filled with Mexican
+                                        rice, refried beans, homemade cheese sauce, red onion, tomato, peppers,
+                                        coriander, salsa, or hot sauce of your choice. <span
+                                            class="text-sm text-step2-border">(1A, 7, 9)</span></p>
+                                </div>
+                                <p class="text-step2-border">€12.00</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-step2-border mr-2">•</span>
+                            <div class="flex justify-between w-full">
+                                <div>
+                                    <p class="text-step2-border">Burrito Bowl <img src="/images/GF.ico"
+                                            class="inline-block h-5 w-5"></p>
+                                    <p class="text-gray-700">Nachos, Mexican rice, refried beans, cheese, pickled onion,
+                                        tomato, peppers, loco sauce, coriander, scallion and salsa or hot sauce of your
+                                        choice. <span class="text-sm text-step2-border">(7, 9)</span></p>
+                                </div>
+                                <p class="text-step2-border">€12.50</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-step2-border mr-2">•</span>
+                            <div class="flex justify-between w-full">
+                                <div>
+                                    <p class="text-step2-border">Loaded Nachos <img src="/images/GF.ico"
+                                            class="inline-block h-5 w-5"></p>
+                                    <p class="text-gray-700">Traditional corn nachos tortilla crisps covered with cheese
+                                        sauce, tomato, peppers, pickled onion, scallion, coriander, loco salsa, or hot
+                                        sauce of your choice. <span class="text-sm text-step2-border">(3, 7)</span></p>
+                                </div>
+                                <p class="text-step2-border">€12.50</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-step2-border mr-2">•</span>
+                            <div class="flex justify-between w-full">
+                                <div>
+                                    <p class="text-step2-border">Mexican Style Loaded Fries <img src="/images/GF.ico"
+                                            class="inline-block h-5 w-5"></p>
+                                    <p class="text-gray-700">Dressed fries in our cheese sauce, tomato, peppers, pickled
+                                        onion, coriander, scallion, loco salsa or hot sauce of your choice. <span
+                                            class="text-sm text-step2-border">(3, 7)</span></p>
+                                </div>
+                                <p class="text-step2-border">€12.50</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Pick Your Salsa -->
+            <section class="relative bg-step3-background border-dotted border-step3-border border-4 shadow p-6 mt-5">
+                <div
+                    class="absolute -top-10 left-1/2 -translate-x-1/2 bg-step3-border text-menu-background font-custom px-4 py-2 uppercase shadow-xl w-[350px] flex items-center justify-center text-4xl rotate-[358deg]">
+                    Step 3: Pick Your Salsa
+                </div>
+                <ul class="space-y-6 mt-3">
+                    <li class="flex items-start">
+                        <span class="text-step3-border mr-2">•</span>
+                        <div>
+                            <p class="text-step3-border">Salsa Roja (mild)</p>
+                            <p class="text-gray-700">Refreshing lightly spiced tomato based salsa.</p>
+                        </div>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-step3-border mr-2">•</span>
+                        <div>
+                            <p class="text-step3-border">Salsa Verde (medium)</p>
+                            <p class="text-gray-700">Moderately spicy sauce based on green tomatillos.</p>
+                        </div>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-step3-border mr-2">•</span>
+                        <div>
+                            <p class="text-step3-border">Pineapple Preacher (hot)</p>
+                            <p class="text-gray-700">Pineapple based hot sauce with Carolina reaper chilli peppers.</p>
+                        </div>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-step3-border mr-2">•</span>
+                        <div>
+                            <p class="text-step3-border">Strawberry Reaper (hot)</p>
+                            <p class="text-gray-700">Strawberry and smoked chipotle based hot sauce with Carolina reaper
+                                chilli peppers.</p>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+        </div>
+
+        <!-- Other Dishes -->
+        <section class="relative bg-other-background border-dotted border-other-border border-4 shadow p-6 mt-14">
+            <div
+                class="absolute -top-10 left-1/2 -translate-x-1/2 bg-other-border text-menu-background font-custom px-4 py-2 uppercase shadow-xl w-[350px] flex items-center justify-center text-4xl rotate-[358deg]">
+                Other Dishes
+            </div>
+            <ul class="space-y-6 mt-3">
+                <li class="flex items-start">
+                    <span class="text-other-border mr-2">•</span>
+                    <div class="flex justify-between w-full">
+                        <div>
+                            <p class="text-other-border">Torta Huevos Rancheros</p>
+                            <p class="text-gray-700">Mexican style sandwich, filled with meat of your choice, pinto
+                                beans, salsa verde cheesy nachos egg, sour cream and lettuce. <span
+                                    class="text-sm text-other-border">(1A, 3, 6, 7, 8, 11)</span></p>
+                        </div>
+                        <p class="text-other-border">€12.00</p>
+                    </div>
+                </li>
+                <li class="flex items-start">
+                    <span class="text-other-border mr-2">•</span>
+                    <div class="flex justify-between w-full">
+                        <div>
+                            <p class="text-other-border">Traditional Caesar Salad</p>
+                            <p class="text-gray-700">Originated in Tijuana Mexico. Our home-made dressing, cos lettuce,
+                                crunchy crushed nachos and parmesan cheese and crispy bacon. Choice of vegetarian option
+                                or meat option. With your delicious, marinated chicken. <span
+                                    class="text-sm text-other-border">(3, 4, 7, 10, 12)</span></p>
+                        </div>
+                        <p class="text-other-border">€12.00</p>
+                    </div>
+                </li>
+                <li class="flex items-start">
+                    <span class="text-other-border mr-2">•</span>
+                    <div class="flex justify-between w-full">
+                        <div>
+                            <p class="text-other-border">Mexican Mix for 2</p>
+                            <p class="text-gray-700">A selection of our favourite Mexican dishes.</p>
+                        </div>
+                        <p class="text-other-border">€50.00</p>
+                    </div>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Add On! -->
+        <section class="relative bg-addon-background border-dotted border-addon-border border-4 shadow p-6 mt-14">
+            <div
+                class="absolute -top-10 left-1/2 -translate-x-1/2 bg-addon-border text-menu-background font-custom px-4 py-2 uppercase shadow-xl w-[350px] flex items-center justify-center text-4xl rotate-[358deg]">
+                Tex-Mex Dish Add-Ons!
+            </div>
+            <p class="text-gray-700 mb-6">Add any extra topping for €0.80c</p>
+            <div class="grid grid-cols-2 gap-6">
+                <ul class="space-y-4">
+                    <li class="flex items-start">
+                        <span class="text-addon-border mr-2">•</span>
+                        <p class="text-gray-700">Cheese sauce <span class="text-sm text-addon-border">(7)</span></p>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-addon-border mr-2">•</span>
+                        <p class="text-gray-700">Jalapeños <span class="text-sm text-addon-border">(7)</span></p>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-addon-border mr-2">•</span>
+                        <p class="text-gray-700">Loco chipotle sauce <span class="text-sm text-addon-border">(8)</span>
+                        </p>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-addon-border mr-2">•</span>
+                        <p class="text-gray-700">Guacamole</p>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-addon-border mr-2">•</span>
+                        <p class="text-gray-700">Sour cream <span class="text-sm text-addon-border">(7)</span></p>
+                    </li>
+                </ul>
+                <ul class="space-y-4">
+                    <li class="flex items-start">
+                        <span class="text-addon-border mr-2">•</span>
+                        <p class="text-gray-700">Queso <span class="text-sm text-addon-border">(7)</span></p>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-addon-border mr-2">•</span>
+                        <p class="text-gray-700">Monterey Jack cheese <span class="text-sm text-addon-border">(7)</span>
+                        </p>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-addon-border mr-2">•</span>
+                        <p class="text-gray-700">Pickled onion</p>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-addon-border mr-2">•</span>
+                        <p class="text-gray-700">Grilled sweet potatoes</p>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-addon-border mr-2">•</span>
+                        <p class="text-gray-700">Refried beans <span class="text-sm text-addon-border">(9)</span></p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Sides -->
+        <section class="relative bg-step3-background border-dotted border-step3-border border-4 shadow p-6 mt-14">
+            <div
+                class="absolute -top-10 left-1/2 -translate-x-1/2 bg-step3-border text-menu-background font-custom px-4 py-2 uppercase shadow-xl w-[350px] flex items-center justify-center text-4xl rotate-[358deg]">
+                Sides
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <ul class="space-y-6">
+                    <li class="flex items-start">
+                        <span class="text-step3-border mr-2">•</span>
+                        <div class="flex justify-between w-full">
+                            <div>
+                                <p class="text-step3-border">Elotes</p>
+                                <p class="text-gray-700">Mexican style dressed sweetcorn using mayonnaise, queso and
+                                    coriander. <span class="text-sm text-step3-border">(3, 7)</span></p>
+                            </div>
+                            <p class="text-step3-border">€4.00</p>
+                        </div>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-step3-border mr-2">•</span>
+                        <div class="flex justify-between w-full">
+                            <div>
+                                <p class="text-step3-border">Loco Chips</p>
+                                <p class="text-gray-700">Dressed chips with our loco chipotle sauce.</p>
+                            </div>
+                            <p class="text-step3-border">€5.75</p>
+                        </div>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-step3-border mr-2">•</span>
+                        <div class="flex justify-between w-full">
+                            <div>
+                                <p class="text-step3-border">Cheesy Fries/Nachos</p>
+                                <p class="text-gray-700">Dressed Nachos/Fries. Cheese sauce, guacamole and salsa or hot
+                                    sauce of your choice <span class="text-sm text-step3-border">(7)</span></p>
+                            </div>
+                            <p class="text-step3-border">€7.75</p>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="space-y-6">
+                    <li class="flex items-start">
+                        <span class="text-step3-border mr-2">•</span>
+                        <div class="flex justify-between w-full">
+                            <p class="text-gray-700">Plain Fries</p>
+                            <p class="text-step3-border">€3.50</p>
+                        </div>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-step3-border mr-2">•</span>
+                        <div class="flex justify-between w-full">
+                            <p class="text-gray-700">Loco Chipotle Mayo <span
+                                    class="text-sm text-step3-border">(8)</span></p>
+                            <p class="text-step3-border">€2.50</p>
+                        </div>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-step3-border mr-2">•</span>
+                        <div class="flex justify-between w-full">
+                            <p class="text-gray-700">Refried Beans <span class="text-sm text-step3-border">(9)</span>
+                            </p>
+                            <p class="text-step3-border">€3.00</p>
+                        </div>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-step3-border mr-2">•</span>
+                        <div class="flex justify-between w-full">
+                            <p class="text-gray-700">Extra Meat</p>
+                            <p class="text-step3-border">€4.50</p>
+                        </div>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-step3-border mr-2">•</span>
+                        <div class="flex justify-between w-full">
+                            <p class="text-gray-700">Birria Consommé</p>
+                            <p class="text-step3-border">€3.00</p>
+                        </div>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-step3-border mr-2">•</span>
+                        <div class="flex justify-between w-full">
+                            <p class="text-gray-700">Cheese Sauce or Jalapeño Cheese Sauce</p>
+                            <p class="text-step3-border">€4.00</p>
+                        </div>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-step3-border mr-2">•</span>
+                        <div class="flex justify-between w-full">
+                            <p class="text-gray-700">Side salad</p>
+                            <p class="text-step3-border">€4.50</p>
+                        </div>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-step3-border mr-2">•</span>
+                        <div class="flex justify-between w-full">
+                            <p class="text-gray-700">Guacamole</p>
+                            <p class="text-step3-border">€2.50</p>
+                        </div>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-step3-border mr-2">•</span>
+                        <div class="flex justify-between w-full">
+                            <p class="text-gray-700">Pico de Gallo</p>
+                            <p class="text-step3-border">€2.50</p>
+                        </div>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-step3-border mr-2">•</span>
+                        <div class="flex justify-between w-full">
+                            <p class="text-gray-700">Strawberry Reaper</p>
+                            <p class="text-step3-border">€2.50</p>
+                        </div>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-step3-border mr-2">•</span>
+                        <div class="flex justify-between w-full">
+                            <p class="text-gray-700">Pineapple Preacher</p>
+                            <p class="text-step3-border">€2.50</p>
+                        </div>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-step3-border mr-2">•</span>
+                        <div class="flex justify-between w-full">
+                            <p class="text-gray-700">Salsa Roja <span class="text-sm text-step3-border">(Mild)</span>
+                            </p>
+                            <p class="text-step3-border">€1.50</p>
+                        </div>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-step3-border mr-2">•</span>
+                        <div class="flex justify-between w-full">
+                            <p class="text-gray-700">Salsa Verde <span class="text-sm text-step3-border">(Medium)</span>
+                            </p>
+                            <p class="text-step3-border">€1.50</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Kids Menu -->
+        <section class="relative bg-step2-background border-dotted border-step2-border border-4 shadow p-6 mt-14">
+            <div
+                class="absolute -top-10 left-1/2 -translate-x-1/2 bg-step2-border text-menu-background font-custom px-4 py-2 uppercase shadow-xl w-[350px] flex items-center justify-center text-4xl rotate-[358deg]">
+                Kids Menu
+            </div>
+            <ul class="space-y-6">
+                <li class="flex items-start">
+                    <span class="text-step2-border mr-2">•</span>
+                    <div class="flex justify-between w-full">
+                        <div>
+                            <p class="text-step2-border">Kids Loaded Fries/Nachos or Rice</p>
+                            <p class="text-gray-700">Cheese sauce, meat, tomato, peppers and light salsa.</p>
+                        </div>
+                        <p class="text-step2-border">€8.00</p>
+                    </div>
+                </li>
+                <li class="flex items-start">
+                    <span class="text-step2-border mr-2">•</span>
+                    <div class="flex justify-between w-full">
+                        <div>
+                            <p class="text-step2-border">Mini Torta</p>
+                            <p class="text-gray-700">Meat loaded buns with the option of cheese, salad, ketchup or mayo
+                                <span class="text-sm text-step2-border">(1A, 3, 6, 7, 8, 11)</span>
+                            </p>
+                        </div>
+                        <p class="text-step2-border">€8.00</p>
+                    </div>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Mexican Drinks & Desserts -->
+        <section class="relative bg-step1-background border-dotted border-step1-border border-4 shadow p-6 mt-14">
+            <div
+                class="absolute -top-10 left-1/2 -translate-x-1/2 bg-step1-border text-menu-background font-custom px-4 py-2 uppercase shadow-xl w-[350px] flex items-center justify-center text-4xl rotate-[358deg]">
+                Mexican Drinks & Desserts
+            </div>
+            <ul class="space-y-6">
+                <li class="flex items-start">
+                    <span class="text-step1-border mr-2">•</span>
+                    <div class="flex justify-between w-full">
+                        <div>
+                            <p class="text-step1-border">Horchata</p>
+                            <p class="text-gray-700">Traditional Mexican beverage made out of raw rice milk and
+                                condensed milk. Lightly sweetened milkshake style drink with cinnamon and vanilla
+                                flavour. <span class="text-sm text-step1-border">(7)</span></p>
+                        </div>
+                        <p class="text-step1-border">€4.50</p>
+                    </div>
+                </li>
+                <li class="flex items-start">
+                    <span class="text-step1-border mr-2">•</span>
+                    <div class="flex justify-between w-full">
+                        <p class="text-step1-border">Natural Flavoured Lemonades</p>
+                        <p class="text-step1-border">€4.00</p>
+                    </div>
+                </li>
+                <li class="flex items-start">
+                    <span class="text-step1-border mr-2">•</span>
+                    <div class="flex justify-between w-full">
+                        <div>
+                            <p class="text-step1-border">Tres Leches</p>
+                            <p class="text-gray-700">Authentic Mexican Dessert <span
+                                    class="text-sm text-step1-border">(1A, 3, 7)</span></p>
+                        </div>
+                        <p class="text-step1-border">€4.00</p>
+                    </div>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Normal Drinks -->
+        <section class="relative bg-other-background border-dotted border-other-border border-4 shadow p-6 mt-14">
+            <div
+                class="absolute -top-10 left-1/2 -translate-x-1/2 bg-other-border text-other-background font-custom px-4 py-2 uppercase shadow-xl w-[350px] flex items-center justify-center text-4xl rotate-[358deg]">
+                Other Drinks
+            </div>
+            <ul class="space-y-6">
+                <li class="flex items-start">
+                    <span class="text-other-border mr-2">•</span>
+                    <div class="flex justify-between w-full">
+                        <p class="text-gray-700">Regular coke</p>
+                        <p class="text-other-border">€3.00</p>
+                    </div>
+                </li>
+                <li class="flex items-start">
+                    <span class="text-other-border mr-2">•</span>
+                    <div class="flex justify-between w-full">
+                        <p class="text-gray-700">Coke zero</p>
+                        <p class="text-other-border">€2.50</p>
+                    </div>
+                </li>
+                <li class="flex items-start">
+                    <span class="text-other-border mr-2">•</span>
+                    <div class="flex justify-between w-full">
+                        <p class="text-gray-700">Monster Mango Loco</p>
+                        <p class="text-other-border">€4.00</p>
+                    </div>
+                </li>
+                <li class="flex items-start">
+                    <span class="text-other-border mr-2">•</span>
+                    <div class="flex justify-between w-full">
+                        <p class="text-gray-700">Water</p>
+                        <p class="text-other-border">€2.50</p>
+                    </div>
+                </li>
+            </ul>
+        </section>
+
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="relative bg-black text-white py-8 mt-8 border-t-4 border-custom-red">
+
+        <section class="bg-black text-white py-8 shadow">
+            <div class="max-w-7xl mx-auto px-14">
+                <div
+                    class="absolute -top-10 left-1/2 -translate-x-1/2 bg-step1-border text-other-background font-custom px-4 py-2 uppercase shadow-xl w-[350px] flex items-center justify-center text-4xl rotate-[358deg]">
+                    Allergens
+                </div>
+                <div class="text-sm">
+                    <p class="mb-2">
+                        <span class="text-other-border font-bold">1.</span> Cereals containing gluten,
+                        <span class="text-other-border font-bold">2.</span> Crustaceans,
+                        <span class="text-other-border font-bold">3.</span> Eggs,
+                        <span class="text-other-border font-bold">4.</span> Fish,
+                        <span class="text-other-border font-bold">5.</span> Peanuts,
+                        <span class="text-other-border font-bold">6.</span> Soybeans,
+                        <span class="text-other-border font-bold">7.</span> Milk,
+                        <span class="text-other-border font-bold">8.</span> Nuts,
+                        <span class="text-other-border font-bold">9.</span> Celery,
+                        <span class="text-other-border font-bold">10.</span> Mustard,
+                        <span class="text-other-border font-bold">11.</span> Sesame seeds,
+                        <span class="text-other-border font-bold">12.</span> Sulphur dioxide and sulphites,
+                        <span class="text-other-border font-bold">13.</span> Lupin,
+                        <span class="text-other-border font-bold">14.</span> Molluscs
+                    </p>
+                    <p>
+                        <span class="text-other-border font-bold">A.</span> Wheat,
+                        <span class="text-other-border font-bold">B.</span> Wheatberries,
+                        <span class="text-other-border font-bold">C.</span> Durum,
+                        <span class="text-other-border font-bold">D.</span> Emmer,
+                        <span class="text-other-border font-bold">E.</span> Semolina,
+                        <span class="text-other-border font-bold">F.</span> Spelt,
+                        <span class="text-other-border font-bold">G.</span> Farina,
+                        <span class="text-other-border font-bold">H.</span> Farro,
+                        <span class="text-other-border font-bold">I.</span> Graham,
+                        <span class="text-other-border font-bold">J.</span> Kamut,
+                        <span class="text-other-border font-bold">K.</span> Khorasan wheat,
+                        <span class="text-other-border font-bold">L.</span> Rye,
+                        <span class="text-other-border font-bold">M.</span> Triticale,
+                        <span class="text-other-border font-bold">N.</span> Malt,
+                        <span class="text-other-border font-bold">O.</span> Brewer’s yeast,
+                        <span class="text-other-border font-bold">P.</span> Wheat starch
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <!-- Contact Info -->
+                <div class="flex flex-col items-center md:items-start">
+                    <p class="text-lg font-bold mb-2 text-custom-yellow">La Vida Loca, Waterford</p>
+                    <p class="text-sm text-gray-50 mb-1">Cork Road, Waterford, X91 Y886</p>
+                    <p class="text-sm text-gray-50">Phone: 083 305 2216</p>
+                </div>
+
+                <!-- Image Placeholder -->
+                <div class="flex flex-col items-center">
+                    <div class="bg-gray-300 w-32 h-32 flex items-center justify-center">
+                        <img src="/images/footerlogo.png" alt="La Vida Loca Logo" class="h-35 w-35">
+                    </div>
+                </div>
+
+                <!-- Opening Times -->
+                <div class="flex flex-col items-center md:items-start">
+                    <p class="text-lg font-bold mb-2 text-custom-red">Opening Times</p>
+                    <p class="text-sm text-gray-50">Monday to Tuesday: Closed</p>
+                    <p class="text-sm text-gray-50">Wednesday to Thursday: 12pm - 7pm</p>
+                    <p class="text-sm text-gray-50">Friday: 12pm - 8pm</p>
+                    <p class="text-sm text-gray-50">Saturday: 1pm - 8pm</p>
+                    <p class="text-sm text-gray-50">Sunday: 1pm - 7pm</p>
+                </div>
+
+                <!-- Social Media -->
+                <div class="flex flex-col items-center">
+                    <p class="text-lg font-bold mb-2 text-custom-yellow">Follow Us</p>
+                    <div class="flex space-x-4">
+                        <a href="https://www.facebook.com/p/La_Vida_Loca_Waterford-100092537434234/"
+                            class="text-white hover:text-custom-yellow">
+                            <img src="/images/icons8-facebook.svg" alt="Facebook" class="h-10 w-10">
+                        </a>
+                        <a href="https://www.instagram.com/la_vida_loca_waterford/?hl=en"
+                            class="text-white hover:text-custom-yellow">
+                            <img src="/images/icons8-instagram.svg" alt="Instagram" class="h-10 w-10">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Navbar toggle
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+
+</html>
