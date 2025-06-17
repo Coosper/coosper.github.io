@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>La Vida Loca</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="/js/script.js"></script>
+  <link rel="stylesheet" href="/css/style.css" />
+  <link rel="icon" href="/images/logo.ico" type="image/x-icon" />
+</head>
+
+<body class="bg-gray-100 font-Brandon">
+  <!-- 
+    ============================================================
+    ========================= NAVBAR ============================
+    ============================================================
+    -->
+  <nav class="bg-black shadow border-b-4 border-custom-red">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="flex justify-between h-16">
+        <!-- Logo -->
+        <div class="flex-shrink-0 flex items-center">
+          <a href="index.html" class="flex items-center space-x-2">
+            <img src="images/lavidaloca_logo.png" alt="Logo" class="h-12 w-auto" />
+            <p class="text-gray-50 text-3xl font-custom">La Vida Loca</p>
+          </a>
+        </div>
+
+        <!-- Menu items (visible on larger screens) -->
+        <div class="hidden md:flex md:items-center md:space-x-6">
+          <a href="index.html" class="block text-gray-50 font-brandon hover:text-custom-yellow px-3 py-2">
+            Home
+          </a>
+          <a href="/pages/menu.html" class="block text-gray-50 font-brandon hover:text-custom-red px-3 py-2">
+            Menu
+          </a>
+          <a href="/pages/about.html" class="block text-gray-50 font-brandon hover:text-custom-green px-3 py-2">
+            About
+          </a>
+          <a href="/pages/contact.html" class="block text-gray-50 font-brandon hover:text-custom-purple px-3 py-2">
+            Contact
+          </a>
+        </div>
+
+        <!-- Hamburger button (visible on mobile) -->
+        <div class="md:hidden flex items-center">
+          <button id="menu-btn" class="text-gray-700 hover:text-gray-900 focus:outline-none">
+            <svg class="h-7 w-7" fill="none" stroke="white" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile menu (hidden by default) -->
+    <div id="mobile-menu" class="md:hidden hidden">
+      <div class="px-2 pt-2 pb-3 space-y-1 bg-black border-t">
+        <a href="/index.html" class="block text-gray-50 font-brandon hover:text-custom-yellow px-3 py-2">Home</a>
+        <a href="/pages/menu.html" class="block text-gray-50 font-brandon hover:text-custom-red px-3 py-2">Menu</a>
+        <a href="/pages/about.html" class="block text-gray-50 font-brandon hover:text-custom-green px-3 py-2">About</a>
+        <a href="/pages/contact.html"
+          class="block text-gray-50 font-brandon hover:text-custom-purple px-3 py-2">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main content with Banner Slideshow -->
+  <main class="bg-menu-background">
+    <!-- Full-width Banner Slideshow -->
+    <section class="relative w-full h-[500px] overflow-hidden shadow-lg border-b-4 border-custom-red">
+      <!-- Slides -->
+      <div class="slideshow-container">
+        <div class="slide fade absolute inset-0 w-full h-full">
+          <img src="/images/birria.png" alt="Slide 1"
+            class="w-full h-full object-cover" />
+          <div
+            class="absolute inset-0 bg-black bg-opacity-40 flex flex-col items-center justify-center text-center text-white px-4">
+            <h2 class="text-4xl md:text-6xl font-brandon font-bold mb-4">Authentic Mexican Dishes</h2>
+<p class="text-lg md:text-2xl mb-6 max-w-3xl">Savor the vibrant flavors of our traditional Mexican dishes, featuring succulent Birria Tostadas, tender Soft Tacos, and melty Quesadillas, all crafted with fresh ingredients and a modern flair.</p>
+          </div>
+        </div>
+        <div class="slide fade absolute inset-0 w-full h-full hidden">
+          <img src="/images/salsa.png" alt="Slide 2"
+            class="w-full h-full object-cover" />
+          <div
+            class="absolute inset-0 bg-black bg-opacity-40 flex flex-col items-center justify-center text-center text-white px-4">
+            <h2 class="text-4xl md:text-6xl font-brandon font-bold mb-4">Fresh Salsas</h2>
+            <p class="text-lg md:text-2xl mb-6 max-w-3xl">Our house-made salsas are the perfect complement to every
+              dish, bursting with vibrant flavors.</p>
+          </div>
+        </div>
+        <div class="slide fade absolute inset-0 w-full h-full hidden">
+          <img src="/images/burrito (2).jpg" alt="Slide 3"
+            class="w-full h-full object-cover" />
+          <div
+            class="absolute inset-0 bg-black bg-opacity-40 flex flex-col items-center justify-center text-center text-white px-4">
+            <h2 class="text-4xl md:text-6xl font-brandon font-bold mb-4">Tex-Mex Options</h2>
+            <p class="text-lg md:text-2xl mb-6 max-w-3xl">Enjoy our bold Burritos, fresh bowls and Loaded Nachos/Chips, bursting with flavor</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Navigation Dots -->
+      <div class="absolute bottom-4 left-0 right-0 flex justify-center space-x-2">
+        <span class="dot w-4 h-4 bg-gray-300 rounded-full cursor-pointer" onclick="currentSlide(0)"></span>
+        <span class="dot w-4 h-4 bg-gray-300 rounded-full cursor-pointer" onclick="currentSlide(1)"></span>
+        <span class="dot w-4 h-4 bg-gray-300 rounded-full cursor-pointer" onclick="currentSlide(2)"></span>
+      </div>
+    </section>
+
+    <!-- Welcome Section -->
+    <section class="max-w-7xl mx-auto px-4 py-12 text-center mt-12">
+      <h1 class="text-8xl text-black-400 font-custom mb-10 rotate-[358deg]">Welcome to La Vida Loca!</h1>
+      <p class="text-lg font-brandon md:text-xl text-gray-700 mb-8 max-w-2xl mx-auto">
+        Experience the vibrant flavors of Mexico right here in Waterford.
+        Our food truck brings you authentic, mouthwatering dishes crafted from family recipes, fresh ingredients and a
+        whole lot of amour.
+        Whether you're craving classic tacos, hefty burritos or to try something new, La Vida Loca has something for
+        everyone.
+      </p>
+      <a href="/pages/menu.html"
+        class="inline-block bg-black text-white px-10 py-4 rounded-full border-2 border-step1-border font-brandon hover:bg-step1-border hover:text-black transition text-lg mb-10">View
+        Our Menu</a>
+      <h1 class="text-8xl text-black-400 font-custom mb-10 rotate-[358deg] pt-8">Order Now!</h1>
+      <p class="text-lg font-brandon md:text-xl text-gray-700 mb-8 max-w-2xl mx-auto">
+        Craving the bold flavors of La Vida Loca? Call us to place your order and savor the best Mexican cuisine in
+        Waterford, hot off our food truck!
+      </p>
+      <a href="tel:+353833052216"
+        class="inline-block bg-black text-white px-10 py-4 rounded-full border-2 border-step1-border font-brandon hover:bg-step1-border hover:text-black transition text-lg mb-10">Call
+        to Order</a>
+    </section>
+
+    <!-- Featured Dishes Section -->
+    <section class="max-w-7xl mx-auto px-4 py-10">
+      <h2 class="text-3xl font-brandon md:text-4xl font-bold text-center text-black mb-8">Featured Dishes</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <!-- Dish 1 -->
+        <div class="bg-step1-background rounded-lg shadow-lg overflow-hidden">
+          <img src="/images/birria.png" alt="Birria Tostadas"
+            class="w-full h-48 object-cover" />
+          <div class="p-4">
+            <h3 class="text-xl font-brandon text-step1-border mb-2">Birria Tostadas</h3>
+            <p class="text-gray-600 mb-4">2 medium corn-based tortillas filled with beef, cheese, onion, and coriander. Served alongside our birria consommé, salsa roja, salsa verde, and fresh side salad.</p>
+            <a href="/pages/menu.html" class="text-step1-border font-semibold hover:underline">View Menu</a>
+          </div>
+        </div>
+        <!-- Dish 2 -->
+        <div class="bg-step2-background rounded-lg shadow-lg overflow-hidden">
+          <img src="/images/softtacos.png" alt="Soft Tacos"
+            class="w-full h-48 object-cover" />
+          <div class="p-4">
+            <h3 class="text-xl font-brandon text-step2-border mb-2">Soft Tacos</h3>
+            <p class="text-gray-600 mb-4">Traditional 8” double hand sized soft corn tortillas filled with your favourite meat. Served with salsa roja, salsa verde and salad.</p>
+            <a href="/pages/menu.html" class="text-step2-border font-semibold hover:underline">View Menu</a>
+          </div>
+        </div>
+        <!-- Dish 3 -->
+        <div class="bg-step3-background rounded-lg shadow-lg overflow-hidden">
+          <img src="/images/burrito.jpg" alt="Burrito"
+            class="w-full h-48 object-cover" />
+          <div class="p-4">
+            <h3 class="text-xl font-brandon text-step3-border mb-2">Burritos</h3>
+            <p class="text-gray-600 mb-4">Lightly grilled wheat flour tortilla filled with Mexican rice, refried beans, homemade cheese sauce, red onion, tomato, peppers, coriander, salsa, or hot sauce of your choice.</p>
+            <a href="/pages/menu.html" class="text-step3-border font-semibold hover:underline">View Menu</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="relative bg-black text-white py-8 border-t-4 border-custom-red font-Brandon">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+        <!-- Contact Info -->
+        <div class="flex flex-col items-center md:items-start">
+          <p class="text-lg block font-brandon font-bold mb-2 text-custom-yellow">La Vida Loca, Waterford</p>
+          <p class="text-sm block font-brandon text-gray-50 mb-1">Cork Road, Waterford, X91 Y886</p>
+          <p class="text-sm block font-brandon text-gray-50">Phone: 083 305 2216</p>
+        </div>
+
+        <!-- Image Placeholder -->
+        <div class="flex flex-col items-center">
+          <div class="bg-gray-300 w-32 h-32 flex items-center justify-center">
+            <img src="/images/footerlogo.png" alt="La Vida Loca Logo" class="h-35 w-35">
+          </div>
+        </div>
+
+        <!-- Opening Times -->
+        <div class="flex flex-col items-center md:items-start">
+          <p class="text-lg font-bold block font-brandon mb-2 text-custom-red">Opening Times</p>
+          <p class="text-sm block font-brandon text-gray-50">Monday to Tuesday: Closed</p>
+          <p class="text-sm block font-brandon text-gray-50">Wednesday to Thursday: 12pm - 7pm</p>
+          <p class="text-sm block font-brandon text-gray-50">Friday: 12pm - 8pm</p>
+          <p class="text-sm block font-brandon text-gray-50">Saturday: 1pm - 8pm</p>
+          <p class="text-sm block font-brandon text-gray-50">Sunday: 1pm - 7pm</p>
+        </div>
+
+        <!-- Social Media -->
+        <div class="flex flex-col items-center">
+          <p class="text-lg block font-brandon font-bold mb-2 text-custom-yellow">Follow Us</p>
+          <div class="flex space-x-4">
+            <a href="https://www.facebook.com/p/La_Vida_Loca_Waterford-100092537434234/"
+              class="text-white hover:text-custom-yellow">
+              <img src="/images/icons8-facebook.svg" alt="Facebook" class="h-10 w-10">
+            </a>
+            <a href="https://www.instagram.com/la_vida_loca_waterford/?hl=en"
+              class="text-white hover:text-custom-yellow">
+              <img src="/images/icons8-instagram.svg" alt="Instagram" class="h-10 w-10">
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript for menu toggle and slideshow -->
+  <script>
+    // Menu toggle
+    const menuBtn = document.getElementById("menu-btn");
+    const mobileMenu = document.getElementById("mobile-menu");
+
+    menuBtn.addEventListener("click", () => {
+      mobileMenu.classList.toggle("hidden");
+    });
+
+    // Slideshow functionality
+    let slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+      let slides = document.getElementsByClassName("slide");
+      let dots = document.getElementsByClassName("dot");
+
+      // Hide all slides and remove active dot
+      for (let i = 0; i < slides.length; i++) {
+        slides[i].classList.add("hidden");
+        dots[i].classList.remove("bg-custom-red");
+        dots[i].classList.add("bg-gray-300");
+      }
+
+      // Increment slide index and loop back to 0 if at the end
+      slideIndex++;
+      if (slideIndex >= slides.length) {
+        slideIndex = 0;
+      }
+
+      // Show current slide and highlight active dot
+      slides[slideIndex].classList.remove("hidden");
+      dots[slideIndex].classList.remove("bg-gray-300");
+      dots[slideIndex].classList.add("bg-custom-red");
+
+      // Change slide every 5 seconds
+      setTimeout(showSlides, 7000);
+    }
+
+    // Function to manually set slide
+    function currentSlide(n) {
+      slideIndex = n - 1;
+      showSlides();
+    }
+  </script>
+</body>
+
+</html>
